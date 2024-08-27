@@ -1,0 +1,222 @@
+.col-7 img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+  }
+  
+  .primercard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home {
+    margin: 0;
+  }
+  
+  .blob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .blob > img {
+    max-width: 600px;
+    width: 100%;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    border-radius: 20px;
+  
+    margin: 20px;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+  
+  .FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+    flex-direction: row;
+  }
+  .FlexContainer > .flex-blob {
+    width: 40%;
+  
+    margin: 5px;
+  }
+  /* Media query para ajustar en pantallas pequeñas */
+  @media screen and (max-width: 600px) {
+    .flex-container {
+      flex-direction: column; /* Cambia la dirección a columnas */
+      align-items: center; /* Centra los elementos verticalmente */
+    }
+  
+    .map-container {
+      margin-top: 0; /* Quita el margen superior en modo columna */
+    }
+  
+    /* Ajustes específicos para el iframe */
+    .map-container iframe {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      height: 300px; /* Ajusta la altura según sea necesario */
+      min-width: initial; /* Quita el ancho mínimo */
+      border-radius: 5%; /* Mantiene el radio de borde si es necesario */
+      margin-top: 10px; /* Espacio superior opcional */
+    }
+  }
+  #contacto-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los divs se envuelvan si el espacio es insuficiente */
+    gap: 20px; /* Espacio entre los divs */
+    height: 90vh;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .flex-container {
+      flex-direction: column; /* Cambia la dirección a columnas */
+      align-items: center; /* Centra los elementos verticalmente */
+    }
+    #contacto-section {
+      flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .col-7 {
+      overflow: hidden;
+    }
+    .col-7 img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Para evitar espacios debajo de la imagen */
+    }
+    img {
+      border-radius: 10px;
+    }
+    .col-5 {
+      width: 100%;
+      min-width: 200px;
+    }
+  
+    .map-container {
+      margin-top: 0; /* Quita el margen superior en modo columna */
+    }
+  
+    /* Ajustes específicos para el iframe */
+    .map-container iframe {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      height: 300px; /* Ajusta la altura según sea necesario */
+      min-width: initial; /* Quita el ancho mínimo */
+      border-radius: 5%; /* Mantiene el radio de borde si es necesario */
+      margin-top: 10px; /* Espacio superior opcional */
+    }
+  }
+  
+  .container2 {
+    overflow: hidden;
+    width: 100%;
+    position: relative; /* Posiciona el contenedor relativamente */
+  }
+  
+  .FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: #2f1d58;
+    flex-direction: row;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    animation: slide 20s linear infinite;
+  }
+  
+  .images img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .images img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.4);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%); /* Comienza fuera de la pantalla a la derecha */
+    }
+    100% {
+      transform: translateX(
+        -100%
+      ); /* Termina fuera de la pantalla a la izquierda */
+    }
+  }
+  /* Contenedor principal del slider */
+  .slider-container {
+    width: 80vw; /* Ancho del viewport */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Contenedor de las imágenes con animación */
+  .slider3 {
+    display: flex;
+  
+    width: calc(
+      100% * 2
+    ); /* Asegúrate de que esto sea suficiente para la animación */
+    animation: scroll 20s linear infinite; /* Ajusta la duración según sea necesario */
+  }
+  
+  /* Estilo para las imágenes */
+  .slide3 {
+    width: 350px; /* Ajusta el tamaño de los elementos según sea necesario */
+  
+    border-radius: 50%; /* Esto recorta el contenedor en un círculo */
+    overflow: hidden; /* Asegura que el contenido dentro del contenedor no se desborde */
+    background: rebeccapurple; /* Fondo del contenedor, si es necesario */
+    display: flex;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    flex-shrink: 0; /* Evita que los elementos se reduzcan */
+  }
+  
+  .slide3 img {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: 100%; /* Ajusta la altura de la imagen para llenar el contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    border-radius: 50%; /* Esto recorta la imagen en un círculo */
+  }
+  
+  /* Animación de desplazamiento */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        -50%
+      ); /* Ajusta el porcentaje según la longitud total del slider */
+    }
+  }
+  
+  .circular-image {
+    width: 200px; /* Ancho del contenedor */
+    height: 200px; /* Alto del contenedor */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+  }
+  

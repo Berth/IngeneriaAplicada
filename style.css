@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.micard {
+  background: #ffffff;
+}
+.blob {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.blob > img {
+  max-width: 600px;
+  width: 100%;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center center;
+  border-radius: 20px;
+
+  margin: 20px;
+  animation: animate 10s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+.primercard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel {
+  width: 70%; /* Ancho del carrusel */
+  margin: auto; /* Centrar el carrusel */
+}
+
+/* Ajuste para las imágenes del carrusel */
+.carousel-inner > .item > img {
+  display: block;
+  width: 100%; /* Ancho completo de la imagen */
+  height: auto; /* Altura automática */
+  margin: auto; /* Centrar la imagen */
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+  padding: 20px; /* Espaciado interno opcional */
+}
+
+.micontacto {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  text-align: center; /* Centra el contenido */
+}
+
+.map-container {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  text-align: center; /* Centra el contenido */
+  margin-top: 20px; /* Espacio superior opcional */
+}
+
+/* Media query para ajustar en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column; /* Cambia la dirección a columnas */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+  .map-container {
+    margin-top: 0; /* Quita el margen superior en modo columna */
+  }
+
+  /* Ajustes específicos para el iframe */
+  .map-container iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    min-width: initial; /* Quita el ancho mínimo */
+    border-radius: 5%; /* Mantiene el radio de borde si es necesario */
+    margin-top: 10px; /* Espacio superior opcional */
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: rgb(15, 173, 76);
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
+}

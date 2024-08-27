@@ -1,0 +1,265 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Encabezado del navbar */
+.navbar {
+    padding: 15px 0;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar.navbar-top {
+    margin-bottom: 0;
+}
+
+.navbar.navbar-transparent {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.navbar-brand:hover,
+.navbar-nav > li > a:hover {
+    color: #f0ad4e;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: #702323;
+}
+
+/* Botón de menú (hamburguesa) */
+.navbar-toggle {
+    border: 1px solid #fff;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/* Sección de parallax */
+.parallax {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.parallax.filter-gradient {
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+}
+
+.parallax .container {
+    z-index: 2;
+    position: relative;
+}
+
+.parallax-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Descripción en la sección de parallax */
+.description h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.description h5 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons .btn {
+    margin-right: 10px;
+}
+
+/* Imagen del teléfono */
+.parallax-image {
+    position: relative;
+}
+
+.parallax-image img {
+    max-width: 100%;
+}
+
+/* Secciones grises */
+.section.section-gray {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.section-clients .logos ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.section-clients .logos ul li {
+    margin: 10px 20px;
+}
+
+/* Sección de presentación */
+.section-presentation {
+    padding: 60px 0;
+}
+
+.section-presentation .description h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-presentation .description p {
+    font-size: 16px;
+}
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators.carousel-indicators-orange li {
+    background-color: #f0ad4e;
+}
+
+/* Sección de características */
+.section-features {
+    padding: 60px 0;
+}
+
+.section-features .card {
+    text-align: center;
+    padding: 20px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section-features .card .icon img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.section-features .card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Sección de testimonios */
+.section-testimonial {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.carousel-testimonial-caption h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #f0ad4e;
+}
+
+.footer .nav a {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+}
+
+/* Media queries para diferentes dispositivos */
+@media (max-width: 768px) {
+    .navbar-header .logo img {
+        height: 40px;
+    }
+
+    .description h2 {
+        font-size: 28px;
+    }
+
+    .section-presentation .description h4 {
+        font-size: 24px;
+    }
+
+    .section-features .card {
+        margin-bottom: 20px;
+    }
+
+    .section-testimonial .carousel-testimonial-caption h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand,
+    .navbar-nav > li > a {
+        font-size: 14px;
+    }
+
+    .description h2 {
+        font-size: 24px;
+    }
+
+    .section-presentation .description h4 {
+        font-size: 20px;
+    }
+}

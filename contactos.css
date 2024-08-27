@@ -1,0 +1,164 @@
+/* General Styles */
+.bg-transparent-m {
+  background-color: #000000; /* Fondo negro */
+  padding: 50px 20px; /* Padding general */
+  color: #fff; /* Color de texto blanco para contraste */
+}
+
+.container-m {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.icon {
+  text-align: center;
+  font-size: 2rem; /* Tamaño del icono */
+  color: #fff; /* Color del icono en blanco */
+  margin-bottom: 10px;
+}
+
+.content-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #5a0a0a; /* Color de texto blanco */
+}
+
+.content-item p {
+  font-size: 1.9rem;
+  color: #ccc; /* Color de texto gris claro */
+}
+
+.content-item a {
+  color: #1e90ff; /* Azul brillante para los enlaces */
+  text-decoration: none;
+}
+
+.content-item a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #1a301f; /* Fondo gris oscuro para el footer */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  color: #aaa;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navbar-nav li a {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li a i {
+  margin-right: 10px;
+  
+}
+i
+
+.navbar-nav li a:hover {
+  color: #1e90ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .row-m {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .col-md-4 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .icon {
+      margin-bottom: 10px;
+      font-size: 1.9rem;
+  }
+
+  .content-item h2 {
+      font-size: 2rem;
+  }
+
+  .content-item p {
+      font-size: 1.8rem;
+  }
+
+  .bg-transparent-m {
+      padding: 40px 15px;
+  }
+
+  .navbar-nav li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .footer {
+      padding: 30px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .col-md-4 {
+      width: 50%;
+      margin-bottom: 20px;
+  }
+
+  .icon {
+      font-size: 1.6rem;
+  }
+
+  .content-item h3 {
+      font-size: 1.4rem;
+  }
+
+  .content-item p {
+      font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 993px) {
+  .row-m {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .col-md-4 {
+      flex: 0 0 30%;
+      max-width: 30%;
+  }
+
+  .icon {
+      font-size: 4rem;
+  }
+
+  .content-item h3 {
+      font-size: 1.5rem;
+  }
+
+  .content-item p {
+      font-size: 1.9rem;
+  }
+}
